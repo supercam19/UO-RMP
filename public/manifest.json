@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "UO Rate My Prof",
+    "version": "0.1",
+    "description": "View professor rankings on the UOZone enrollment page",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.uocampus.uottawa.ca/psp/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
