@@ -8,7 +8,6 @@ function waitForElm(selector: string) {
 
         const observer = new MutationObserver(mutations => {
             if (document.querySelector(selector)) {
-                console.log('Found');
                 observer.disconnect();
                 resolve(document.querySelector(selector));
             }
@@ -22,14 +21,21 @@ function waitForElm(selector: string) {
         });
     });
 }
-console.log('Content script loaded: ' + document.querySelector('#win0divDERIVED_CLSRCH_GROUP6'));
+console.log('Content script loaded');
 waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
-    console.log('Element found');
     const ids = document.querySelectorAll('[id]'); 
-    console.log(ids);
     const filtered = Array.from(ids).filter(el => /INSTR\$[0-9]+/.test(el.id))
-    console.log(filtered);
     const names = new Set<string>(filtered.map(el => (el.textContent ?? '').trim().split('\n')[0]));
     names.delete('');
+    names.delete('To be Announced');
     console.log(names);
+    chrome.runtime.sendMessage(
+        {
+            type: 'profNames',
+            payload: Array.from(names)
+        },
+        (response) => {
+            console.log('Response from background script:', response);
+        }
+    );
 });
