@@ -4,10 +4,14 @@
     "version": "0.1",
     "description": "View professor rankings on the UOZone enrollment page",
     "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://www.uocampus.uottawa.ca/psp/*"],
     "content_scripts": [
         {
             "matches": ["https://www.uocampus.uottawa.ca/psp/*"],
-            "js": ["content.js"]
+            "js": ["content.js"],
+            "run_at": "document_idle",
+            "all_frames": true,
+            "match_about_blank": true
         }
     ]
 }
