@@ -3,7 +3,8 @@
     "name": "UO Rate My Prof",
     "version": "0.1",
     "description": "View professor rankings on the UOZone enrollment page",
-    "permissions": ["scripting", "activeTab"],
+    "permissions": ["scripting", "activeTab", "storage"],
+    "host_permissions": ["https://www.ratemyprofessors.com/*"],
     "background": {
         "scripts": ["background.js"]
     },
