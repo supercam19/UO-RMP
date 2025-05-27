@@ -6,6 +6,7 @@ export default defineConfig({
       input: {
         content: 'src/content.ts',
         background: 'src/background.ts',
+        professor: 'src/professor.ts',
       },
       output: {
         entryFileNames: '[name].js'

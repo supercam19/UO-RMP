@@ -1,0 +1,1051 @@
+{
+    "RGVwYXJ0bWVudC00": {
+        "__id": "RGVwYXJ0bWVudC00",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00",
+        "value": "architecture"
+    },
+    "RGVwYXJ0bWVudC00MA==": {
+        "__id": "RGVwYXJ0bWVudC00MA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00MA==",
+        "value": "music"
+    },
+    "RGVwYXJ0bWVudC00MDI=": {
+        "__id": "RGVwYXJ0bWVudC00MDI=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00MDI=",
+        "value": "government"
+    },
+    "RGVwYXJ0bWVudC00MQ==": {
+        "__id": "RGVwYXJ0bWVudC00MQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00MQ==",
+        "value": "nursing"
+    },
+    "RGVwYXJ0bWVudC00Mg==": {
+        "__id": "RGVwYXJ0bWVudC00Mg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00Mg==",
+        "value": "philosophy"
+    },
+    "RGVwYXJ0bWVudC00MjM=": {
+        "__id": "RGVwYXJ0bWVudC00MjM=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00MjM=",
+        "value": "graphic design"
+    },
+    "RGVwYXJ0bWVudC00MzY=": {
+        "__id": "RGVwYXJ0bWVudC00MzY=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00MzY=",
+        "value": "medical assisting"
+    },
+    "RGVwYXJ0bWVudC00NA==": {
+        "__id": "RGVwYXJ0bWVudC00NA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00NA==",
+        "value": "physics"
+    },
+    "RGVwYXJ0bWVudC00NQ==": {
+        "__id": "RGVwYXJ0bWVudC00NQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00NQ==",
+        "value": "political science"
+    },
+    "RGVwYXJ0bWVudC00Ng==": {
+        "__id": "RGVwYXJ0bWVudC00Ng==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00Ng==",
+        "value": "psychology"
+    },
+    "RGVwYXJ0bWVudC00NjU=": {
+        "__id": "RGVwYXJ0bWVudC00NjU=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00NjU=",
+        "value": "modern languages"
+    },
+    "RGVwYXJ0bWVudC00Nw==": {
+        "__id": "RGVwYXJ0bWVudC00Nw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC00Nw==",
+        "value": "religion"
+    },
+    "RGVwYXJ0bWVudC01": {
+        "__id": "RGVwYXJ0bWVudC01",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01",
+        "value": "art history"
+    },
+    "RGVwYXJ0bWVudC01MA==": {
+        "__id": "RGVwYXJ0bWVudC01MA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01MA==",
+        "value": "social work"
+    },
+    "RGVwYXJ0bWVudC01MQ==": {
+        "__id": "RGVwYXJ0bWVudC01MQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01MQ==",
+        "value": "sociology"
+    },
+    "RGVwYXJ0bWVudC01Mg==": {
+        "__id": "RGVwYXJ0bWVudC01Mg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01Mg==",
+        "value": "theater"
+    },
+    "RGVwYXJ0bWVudC01NA==": {
+        "__id": "RGVwYXJ0bWVudC01NA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01NA==",
+        "value": "writing"
+    },
+    "RGVwYXJ0bWVudC01NDI=": {
+        "__id": "RGVwYXJ0bWVudC01NDI=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01NDI=",
+        "value": "health occupations"
+    },
+    "RGVwYXJ0bWVudC01NzE=": {
+        "__id": "RGVwYXJ0bWVudC01NzE=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01NzE=",
+        "value": "foreign languages & literature"
+    },
+    "RGVwYXJ0bWVudC01OTU=": {
+        "__id": "RGVwYXJ0bWVudC01OTU=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC01OTU=",
+        "value": "urban studies"
+    },
+    "RGVwYXJ0bWVudC02": {
+        "__id": "RGVwYXJ0bWVudC02",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC02",
+        "value": "biology"
+    },
+    "RGVwYXJ0bWVudC02MQ==": {
+        "__id": "RGVwYXJ0bWVudC02MQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC02MQ==",
+        "value": "chemical engineering"
+    },
+    "RGVwYXJ0bWVudC02MTM=": {
+        "__id": "RGVwYXJ0bWVudC02MTM=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC02MTM=",
+        "value": "business economics"
+    },
+    "RGVwYXJ0bWVudC02Nzg=": {
+        "__id": "RGVwYXJ0bWVudC02Nzg=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC02Nzg=",
+        "value": "anatomy"
+    },
+    "RGVwYXJ0bWVudC02OQ==": {
+        "__id": "RGVwYXJ0bWVudC02OQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC02OQ==",
+        "value": "mechanical engineering"
+    },
+    "RGVwYXJ0bWVudC03": {
+        "__id": "RGVwYXJ0bWVudC03",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC03",
+        "value": "business"
+    },
+    "RGVwYXJ0bWVudC03MA==": {
+        "__id": "RGVwYXJ0bWVudC03MA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC03MA==",
+        "value": "french"
+    },
+    "RGVwYXJ0bWVudC03OA==": {
+        "__id": "RGVwYXJ0bWVudC03OA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC03OA==",
+        "value": "earth science"
+    },
+    "RGVwYXJ0bWVudC04": {
+        "__id": "RGVwYXJ0bWVudC04",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC04",
+        "value": "chemistry"
+    },
+    "RGVwYXJ0bWVudC04MA==": {
+        "__id": "RGVwYXJ0bWVudC04MA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC04MA==",
+        "value": "spanish"
+    },
+    "RGVwYXJ0bWVudC04Mjk=": {
+        "__id": "RGVwYXJ0bWVudC04Mjk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC04Mjk=",
+        "value": "archaeology"
+    },
+    "RGVwYXJ0bWVudC04MzE=": {
+        "__id": "RGVwYXJ0bWVudC04MzE=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC04MzE=",
+        "value": "police studies"
+    },
+    "RGVwYXJ0bWVudC05Mg==": {
+        "__id": "RGVwYXJ0bWVudC05Mg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC05Mg==",
+        "value": "apparel merchandising"
+    },
+    "RGVwYXJ0bWVudC05OTk=": {
+        "__id": "RGVwYXJ0bWVudC05OTk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC05OTk=",
+        "value": "human development"
+    },
+    "RGVwYXJ0bWVudC0x": {
+        "__id": "RGVwYXJ0bWVudC0x",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0x",
+        "value": "accounting"
+    },
+    "RGVwYXJ0bWVudC0xMA==": {
+        "__id": "RGVwYXJ0bWVudC0xMA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMA==",
+        "value": "communication"
+    },
+    "RGVwYXJ0bWVudC0xMDcz": {
+        "__id": "RGVwYXJ0bWVudC0xMDcz",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMDcz",
+        "value": "biomedical"
+    },
+    "RGVwYXJ0bWVudC0xMDk=": {
+        "__id": "RGVwYXJ0bWVudC0xMDk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMDk=",
+        "value": "family & consumer science"
+    },
+    "RGVwYXJ0bWVudC0xMQ==": {
+        "__id": "RGVwYXJ0bWVudC0xMQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMQ==",
+        "value": "computer science"
+    },
+    "RGVwYXJ0bWVudC0xMTA=": {
+        "__id": "RGVwYXJ0bWVudC0xMTA=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMTA=",
+        "value": "guidance"
+    },
+    "RGVwYXJ0bWVudC0xMTM=": {
+        "__id": "RGVwYXJ0bWVudC0xMTM=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMTM=",
+        "value": "art"
+    },
+    "RGVwYXJ0bWVudC0xMTUw": {
+        "__id": "RGVwYXJ0bWVudC0xMTUw",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMTUw",
+        "value": "hispanic studies"
+    },
+    "RGVwYXJ0bWVudC0xMg==": {
+        "__id": "RGVwYXJ0bWVudC0xMg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMg==",
+        "value": "criminal justice"
+    },
+    "RGVwYXJ0bWVudC0xMjI0": {
+        "__id": "RGVwYXJ0bWVudC0xMjI0",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMjI0",
+        "value": "core curriculum"
+    },
+    "RGVwYXJ0bWVudC0xMjI=": {
+        "__id": "RGVwYXJ0bWVudC0xMjI=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMjI=",
+        "value": "industrial engineering"
+    },
+    "RGVwYXJ0bWVudC0xMjc=": {
+        "__id": "RGVwYXJ0bWVudC0xMjc=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMjc=",
+        "value": "child development"
+    },
+    "RGVwYXJ0bWVudC0xMjk=": {
+        "__id": "RGVwYXJ0bWVudC0xMjk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMjk=",
+        "value": "linguistics"
+    },
+    "RGVwYXJ0bWVudC0xMzA4": {
+        "__id": "RGVwYXJ0bWVudC0xMzA4",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMzA4",
+        "value": "web development"
+    },
+    "RGVwYXJ0bWVudC0xMzU=": {
+        "__id": "RGVwYXJ0bWVudC0xMzU=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xMzU=",
+        "value": "international studies"
+    },
+    "RGVwYXJ0bWVudC0xNA==": {
+        "__id": "RGVwYXJ0bWVudC0xNA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNA==",
+        "value": "design"
+    },
+    "RGVwYXJ0bWVudC0xNDA2": {
+        "__id": "RGVwYXJ0bWVudC0xNDA2",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNDA2",
+        "value": "english as a second language"
+    },
+    "RGVwYXJ0bWVudC0xNDUy": {
+        "__id": "RGVwYXJ0bWVudC0xNDUy",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNDUy",
+        "value": "student success"
+    },
+    "RGVwYXJ0bWVudC0xNDk=": {
+        "__id": "RGVwYXJ0bWVudC0xNDk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNDk=",
+        "value": "russian"
+    },
+    "RGVwYXJ0bWVudC0xNQ==": {
+        "__id": "RGVwYXJ0bWVudC0xNQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNQ==",
+        "value": "economics"
+    },
+    "RGVwYXJ0bWVudC0xNTIz": {
+        "__id": "RGVwYXJ0bWVudC0xNTIz",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNTIz",
+        "value": "earth & space science"
+    },
+    "RGVwYXJ0bWVudC0xNg==": {
+        "__id": "RGVwYXJ0bWVudC0xNg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNg==",
+        "value": "education"
+    },
+    "RGVwYXJ0bWVudC0xNjEx": {
+        "__id": "RGVwYXJ0bWVudC0xNjEx",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNjEx",
+        "value": "media communications"
+    },
+    "RGVwYXJ0bWVudC0xNjM=": {
+        "__id": "RGVwYXJ0bWVudC0xNjM=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNjM=",
+        "value": "counseling"
+    },
+    "RGVwYXJ0bWVudC0xNw==": {
+        "__id": "RGVwYXJ0bWVudC0xNw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNw==",
+        "value": "engineering"
+    },
+    "RGVwYXJ0bWVudC0xNzA=": {
+        "__id": "RGVwYXJ0bWVudC0xNzA=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xNzA=",
+        "value": "japanese"
+    },
+    "RGVwYXJ0bWVudC0xOA==": {
+        "__id": "RGVwYXJ0bWVudC0xOA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xOA==",
+        "value": "english"
+    },
+    "RGVwYXJ0bWVudC0xOQ==": {
+        "__id": "RGVwYXJ0bWVudC0xOQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xOQ==",
+        "value": "ethnic studies"
+    },
+    "RGVwYXJ0bWVudC0xOTAy": {
+        "__id": "RGVwYXJ0bWVudC0xOTAy",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xOTAy",
+        "value": "languages & linguistics"
+    },
+    "RGVwYXJ0bWVudC0xOTI3": {
+        "__id": "RGVwYXJ0bWVudC0xOTI3",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0xOTI3",
+        "value": "english & literature"
+    },
+    "RGVwYXJ0bWVudC0yMA==": {
+        "__id": "RGVwYXJ0bWVudC0yMA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yMA==",
+        "value": "film"
+    },
+    "RGVwYXJ0bWVudC0yMQ==": {
+        "__id": "RGVwYXJ0bWVudC0yMQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yMQ==",
+        "value": "finance"
+    },
+    "RGVwYXJ0bWVudC0yMjE3": {
+        "__id": "RGVwYXJ0bWVudC0yMjE3",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yMjE3",
+        "value": "university writing program"
+    },
+    "RGVwYXJ0bWVudC0yMw==": {
+        "__id": "RGVwYXJ0bWVudC0yMw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yMw==",
+        "value": "geography"
+    },
+    "RGVwYXJ0bWVudC0yMzkx": {
+        "__id": "RGVwYXJ0bWVudC0yMzkx",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yMzkx",
+        "value": "comparative studies"
+    },
+    "RGVwYXJ0bWVudC0yNDg=": {
+        "__id": "RGVwYXJ0bWVudC0yNDg=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yNDg=",
+        "value": "administration"
+    },
+    "RGVwYXJ0bWVudC0yNQ==": {
+        "__id": "RGVwYXJ0bWVudC0yNQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yNQ==",
+        "value": "graphic arts"
+    },
+    "RGVwYXJ0bWVudC0yNg==": {
+        "__id": "RGVwYXJ0bWVudC0yNg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yNg==",
+        "value": "health science"
+    },
+    "RGVwYXJ0bWVudC0yNw==": {
+        "__id": "RGVwYXJ0bWVudC0yNw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yNw==",
+        "value": "history"
+    },
+    "RGVwYXJ0bWVudC0yOA==": {
+        "__id": "RGVwYXJ0bWVudC0yOA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yOA==",
+        "value": "hospitality"
+    },
+    "RGVwYXJ0bWVudC0yODE=": {
+        "__id": "RGVwYXJ0bWVudC0yODE=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0yODE=",
+        "value": "foreign languages"
+    },
+    "RGVwYXJ0bWVudC0z": {
+        "__id": "RGVwYXJ0bWVudC0z",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0z",
+        "value": "anthropology"
+    },
+    "RGVwYXJ0bWVudC0zMA==": {
+        "__id": "RGVwYXJ0bWVudC0zMA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zMA==",
+        "value": "information science"
+    },
+    "RGVwYXJ0bWVudC0zMDg=": {
+        "__id": "RGVwYXJ0bWVudC0zMDg=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zMDg=",
+        "value": "art & design"
+    },
+    "RGVwYXJ0bWVudC0zMjU=": {
+        "__id": "RGVwYXJ0bWVudC0zMjU=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zMjU=",
+        "value": "fashion"
+    },
+    "RGVwYXJ0bWVudC0zMw==": {
+        "__id": "RGVwYXJ0bWVudC0zMw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zMw==",
+        "value": "languages"
+    },
+    "RGVwYXJ0bWVudC0zMzk=": {
+        "__id": "RGVwYXJ0bWVudC0zMzk=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zMzk=",
+        "value": "religious studies"
+    },
+    "RGVwYXJ0bWVudC0zNTE=": {
+        "__id": "RGVwYXJ0bWVudC0zNTE=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zNTE=",
+        "value": "nutrition"
+    },
+    "RGVwYXJ0bWVudC0zNg==": {
+        "__id": "RGVwYXJ0bWVudC0zNg==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zNg==",
+        "value": "management"
+    },
+    "RGVwYXJ0bWVudC0zNw==": {
+        "__id": "RGVwYXJ0bWVudC0zNw==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zNw==",
+        "value": "marketing"
+    },
+    "RGVwYXJ0bWVudC0zOA==": {
+        "__id": "RGVwYXJ0bWVudC0zOA==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zOA==",
+        "value": "mathematics"
+    },
+    "RGVwYXJ0bWVudC0zODE=": {
+        "__id": "RGVwYXJ0bWVudC0zODE=",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zODE=",
+        "value": "information technology"
+    },
+    "RGVwYXJ0bWVudC0zOQ==": {
+        "__id": "RGVwYXJ0bWVudC0zOQ==",
+        "__typename": "FilterOption",
+        "id": "RGVwYXJ0bWVudC0zOQ==",
+        "value": "medicine"
+    },
+    "U2Nob29sLTExMDY=": {
+        "__id": "U2Nob29sLTExMDY=",
+        "__typename": "School",
+        "id": "U2Nob29sLTExMDY=",
+        "name": "University of Hawaii at Manoa"
+    },
+    "U2Nob29sLTEyNjE=": {
+        "__id": "U2Nob29sLTEyNjE=",
+        "__typename": "School",
+        "id": "U2Nob29sLTEyNjE=",
+        "name": "University of Oregon"
+    },
+    "U2Nob29sLTEzOTE0": {
+        "__id": "U2Nob29sLTEzOTE0",
+        "__typename": "School",
+        "id": "U2Nob29sLTEzOTE0",
+        "name": "Cal Poly Pomona"
+    },
+    "U2Nob29sLTIwNTI=": {
+        "__id": "U2Nob29sLTIwNTI=",
+        "__typename": "School",
+        "id": "U2Nob29sLTIwNTI=",
+        "name": "Everett Community College"
+    },
+    "U2Nob29sLTIyMg==": {
+        "__id": "U2Nob29sLTIyMg==",
+        "__typename": "School",
+        "id": "U2Nob29sLTIyMg==",
+        "name": "Baruch College"
+    },
+    "U2Nob29sLTIyNA==": {
+        "__id": "U2Nob29sLTIyNA==",
+        "__typename": "School",
+        "id": "U2Nob29sLTIyNA==",
+        "name": "City College of New York"
+    },
+    "U2Nob29sLTM2MA==": {
+        "__id": "U2Nob29sLTM2MA==",
+        "__typename": "School",
+        "id": "U2Nob29sLTM2MA==",
+        "name": "Georgia State University"
+    },
+    "U2Nob29sLTQz": {
+        "__id": "U2Nob29sLTQz",
+        "__typename": "School",
+        "id": "U2Nob29sLTQz",
+        "name": "Appalachian State University"
+    },
+    "VGVhY2hlci02NzEyODA=": {
+        "__id": "VGVhY2hlci02NzEyODA=",
+        "__typename": "Teacher",
+        "avgDifficulty": 3.5,
+        "avgRating": 4.1,
+        "department": "Languages",
+        "firstName": "Vidal",
+        "id": "VGVhY2hlci02NzEyODA=",
+        "isSaved": false,
+        "lastName": "Martin",
+        "legacyId": 671280,
+        "numRatings": 51,
+        "school": {
+            "__ref": "U2Nob29sLTIwNTI="
+        },
+        "wouldTakeAgainPercent": 81.4815
+    },
+    "VGVhY2hlci03NTI0MTU=": {
+        "__id": "VGVhY2hlci03NTI0MTU=",
+        "__typename": "Teacher",
+        "avgDifficulty": 2.6,
+        "avgRating": 3.1,
+        "department": "English",
+        "firstName": "Vida P",
+        "id": "VGVhY2hlci03NTI0MTU=",
+        "isSaved": false,
+        "lastName": "Jonas",
+        "legacyId": 752415,
+        "numRatings": 44,
+        "school": {
+            "__ref": "U2Nob29sLTEzOTE0"
+        },
+        "wouldTakeAgainPercent": 50
+    },
+    "VGVhY2hlci05NzExMzQ=": {
+        "__id": "VGVhY2hlci05NzExMzQ=",
+        "__typename": "Teacher",
+        "avgDifficulty": 2.6,
+        "avgRating": 4.5,
+        "department": "Languages",
+        "firstName": "Yosa",
+        "id": "VGVhY2hlci05NzExMzQ=",
+        "isSaved": false,
+        "lastName": "Vidal Collados",
+        "legacyId": 971134,
+        "numRatings": 20,
+        "school": {
+            "__ref": "U2Nob29sLTEyNjE="
+        },
+        "wouldTakeAgainPercent": 84.6154
+    },
+    "VGVhY2hlci0xNjY4OTIz": {
+        "__id": "VGVhY2hlci0xNjY4OTIz",
+        "__typename": "Teacher",
+        "avgDifficulty": 3.4,
+        "avgRating": 3.9,
+        "department": "Languages & Linguistics",
+        "firstName": "Monica",
+        "id": "VGVhY2hlci0xNjY4OTIz",
+        "isSaved": false,
+        "lastName": "Vidal",
+        "legacyId": 1668923,
+        "numRatings": 53,
+        "school": {
+            "__ref": "U2Nob29sLTExMDY="
+        },
+        "wouldTakeAgainPercent": 65.9574
+    },
+    "VGVhY2hlci0xODUxMzYy": {
+        "__id": "VGVhY2hlci0xODUxMzYy",
+        "__typename": "Teacher",
+        "avgDifficulty": 3.2,
+        "avgRating": 4,
+        "department": "Management",
+        "firstName": "Elena",
+        "id": "VGVhY2hlci0xODUxMzYy",
+        "isSaved": false,
+        "lastName": "Vidal",
+        "legacyId": 1851362,
+        "numRatings": 21,
+        "school": {
+            "__ref": "U2Nob29sLTIyMg=="
+        },
+        "wouldTakeAgainPercent": 63.6364
+    },
+    "VGVhY2hlci0xOTAyNjk5": {
+        "__id": "VGVhY2hlci0xOTAyNjk5",
+        "__typename": "Teacher",
+        "avgDifficulty": 3.2,
+        "avgRating": 4.8,
+        "department": "Psychology",
+        "firstName": "Bianca",
+        "id": "VGVhY2hlci0xOTAyNjk5",
+        "isSaved": false,
+        "lastName": "Vidal",
+        "legacyId": 1902699,
+        "numRatings": 32,
+        "school": {
+            "__ref": "U2Nob29sLTIyNA=="
+        },
+        "wouldTakeAgainPercent": 100
+    },
+    "VGVhY2hlci0yNTExNzc=": {
+        "__id": "VGVhY2hlci0yNTExNzc=",
+        "__typename": "Teacher",
+        "avgDifficulty": 3.6,
+        "avgRating": 2.2,
+        "department": "Mathematics",
+        "firstName": "Draga",
+        "id": "VGVhY2hlci0yNTExNzc=",
+        "isSaved": false,
+        "lastName": "Vidakovic",
+        "legacyId": 251177,
+        "numRatings": 12,
+        "school": {
+            "__ref": "U2Nob29sLTM2MA=="
+        },
+        "wouldTakeAgainPercent": 20
+    },
+    "VGVhY2hlci0yNzY0MjU1": {
+        "__id": "VGVhY2hlci0yNzY0MjU1",
+        "__typename": "Teacher",
+        "avgDifficulty": 2.3,
+        "avgRating": 4.7,
+        "department": "Chemistry",
+        "firstName": "Punprabhashi",
+        "id": "VGVhY2hlci0yNzY0MjU1",
+        "isSaved": false,
+        "lastName": "Vidanapathirana",
+        "legacyId": 2764255,
+        "numRatings": 20,
+        "school": {
+            "__ref": "U2Nob29sLTQz"
+        },
+        "wouldTakeAgainPercent": 90
+    },
+    "client:root": {
+        "__id": "client:root",
+        "__typename": "__Root",
+        "newSearch": {
+            "__ref": "client:root:newSearch"
+        }
+    },
+    "client:root:newSearch": {
+        "__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})": {
+            "__ref": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})"
+        },
+        "__id": "client:root:newSearch",
+        "__typename": "newSearch",
+        "teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})": {
+            "__ref": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})"
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})": {
+        "__connection_next_edge_index": 8,
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})",
+        "__typename": "TeacherSearchConnectionConnection",
+        "didFallback": false,
+        "edges": {
+            "__refs": [
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6",
+                "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7"
+            ]
+        },
+        "filters": {
+            "__refs": [
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0"
+            ]
+        },
+        "pageInfo": {
+            "__ref": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo"
+        },
+        "resultCount": 250
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+        "node": {
+            "__ref": "VGVhY2hlci0yNzY0MjU1"
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjE=",
+        "node": {
+            "__ref": "VGVhY2hlci03NTI0MTU="
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjI=",
+        "node": {
+            "__ref": "VGVhY2hlci0yNTExNzc="
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjM=",
+        "node": {
+            "__ref": "VGVhY2hlci02NzEyODA="
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjQ=",
+        "node": {
+            "__ref": "VGVhY2hlci0xOTAyNjk5"
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjU=",
+        "node": {
+            "__ref": "VGVhY2hlci05NzExMzQ="
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjY=",
+        "node": {
+            "__ref": "VGVhY2hlci0xNjY4OTIz"
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjc=",
+        "node": {
+            "__ref": "VGVhY2hlci0xODUxMzYy"
+        }
+    },
+    "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo": {
+        "__id": "client:root:newSearch:__TeacherSearchPagination_teachers_connection(query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo",
+        "__typename": "PageInfo",
+        "endCursor": "YXJyYXljb25uZWN0aW9uOjc=",
+        "hasNextPage": true,
+        "hasPreviousPage": false,
+        "startCursor": null
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"})",
+        "__typename": "TeacherSearchConnectionConnection",
+        "didFallback": false,
+        "edges": {
+            "__refs": [
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7"
+            ]
+        },
+        "filters": {
+            "__refs": [
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0"
+            ]
+        },
+        "pageInfo": {
+            "__ref": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo"
+        },
+        "resultCount": 250
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:0",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+        "node": {
+            "__ref": "VGVhY2hlci0yNzY0MjU1"
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:1",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjE=",
+        "node": {
+            "__ref": "VGVhY2hlci03NTI0MTU="
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:2",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjI=",
+        "node": {
+            "__ref": "VGVhY2hlci0yNTExNzc="
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:3",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjM=",
+        "node": {
+            "__ref": "VGVhY2hlci02NzEyODA="
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:4",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjQ=",
+        "node": {
+            "__ref": "VGVhY2hlci0xOTAyNjk5"
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:5",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjU=",
+        "node": {
+            "__ref": "VGVhY2hlci05NzExMzQ="
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:6",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjY=",
+        "node": {
+            "__ref": "VGVhY2hlci0xNjY4OTIz"
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):edges:7",
+        "__typename": "TeacherSearchConnectionEdge",
+        "cursor": "YXJyYXljb25uZWN0aW9uOjc=",
+        "node": {
+            "__ref": "VGVhY2hlci0xODUxMzYy"
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0",
+        "__typename": "Filter",
+        "field": "teacherdepartment_s",
+        "options": {
+            "__refs": [
+                "RGVwYXJ0bWVudC0x",
+                "RGVwYXJ0bWVudC0yNDg=",
+                "RGVwYXJ0bWVudC02Nzg=",
+                "RGVwYXJ0bWVudC0z",
+                "RGVwYXJ0bWVudC05Mg==",
+                "RGVwYXJ0bWVudC04Mjk=",
+                "RGVwYXJ0bWVudC00",
+                "RGVwYXJ0bWVudC0xMTM=",
+                "RGVwYXJ0bWVudC0zMDg=",
+                "RGVwYXJ0bWVudC01",
+                "RGVwYXJ0bWVudC02",
+                "RGVwYXJ0bWVudC0xMDcz",
+                "RGVwYXJ0bWVudC03",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:13",
+                "RGVwYXJ0bWVudC02MTM=",
+                "RGVwYXJ0bWVudC02MQ==",
+                "RGVwYXJ0bWVudC04",
+                "RGVwYXJ0bWVudC0xMjc=",
+                "RGVwYXJ0bWVudC0xMA==",
+                "RGVwYXJ0bWVudC0yMzkx",
+                "RGVwYXJ0bWVudC0xMQ==",
+                "RGVwYXJ0bWVudC0xMjI0",
+                "RGVwYXJ0bWVudC0xNjM=",
+                "RGVwYXJ0bWVudC0xMg==",
+                "RGVwYXJ0bWVudC0xNA==",
+                "RGVwYXJ0bWVudC0xNTIz",
+                "RGVwYXJ0bWVudC03OA==",
+                "RGVwYXJ0bWVudC0xNQ==",
+                "RGVwYXJ0bWVudC0xNg==",
+                "RGVwYXJ0bWVudC0xNw==",
+                "RGVwYXJ0bWVudC0xOA==",
+                "RGVwYXJ0bWVudC0xOTI3",
+                "RGVwYXJ0bWVudC0xNDA2",
+                "RGVwYXJ0bWVudC0xOQ==",
+                "RGVwYXJ0bWVudC0xMDk=",
+                "RGVwYXJ0bWVudC0zMjU=",
+                "RGVwYXJ0bWVudC0yMA==",
+                "RGVwYXJ0bWVudC0yMQ==",
+                "RGVwYXJ0bWVudC0yODE=",
+                "RGVwYXJ0bWVudC01NzE=",
+                "RGVwYXJ0bWVudC03MA==",
+                "RGVwYXJ0bWVudC0yMw==",
+                "RGVwYXJ0bWVudC00MDI=",
+                "RGVwYXJ0bWVudC0yNQ==",
+                "RGVwYXJ0bWVudC00MjM=",
+                "RGVwYXJ0bWVudC0xMTA=",
+                "RGVwYXJ0bWVudC01NDI=",
+                "RGVwYXJ0bWVudC0yNg==",
+                "RGVwYXJ0bWVudC0xMTUw",
+                "RGVwYXJ0bWVudC0yNw==",
+                "RGVwYXJ0bWVudC0yOA==",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:51",
+                "RGVwYXJ0bWVudC05OTk=",
+                "RGVwYXJ0bWVudC0xMjI=",
+                "RGVwYXJ0bWVudC0zMA==",
+                "RGVwYXJ0bWVudC0zODE=",
+                "RGVwYXJ0bWVudC0xMzU=",
+                "RGVwYXJ0bWVudC0xNzA=",
+                "RGVwYXJ0bWVudC0zMw==",
+                "RGVwYXJ0bWVudC0xOTAy",
+                "RGVwYXJ0bWVudC0xMjk=",
+                "RGVwYXJ0bWVudC0zNg==",
+                "RGVwYXJ0bWVudC0zNw==",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:63",
+                "RGVwYXJ0bWVudC0zOA==",
+                "RGVwYXJ0bWVudC02OQ==",
+                "RGVwYXJ0bWVudC0xNjEx",
+                "RGVwYXJ0bWVudC00MzY=",
+                "RGVwYXJ0bWVudC0zOQ==",
+                "RGVwYXJ0bWVudC00NjU=",
+                "RGVwYXJ0bWVudC00MA==",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:71",
+                "RGVwYXJ0bWVudC00MQ==",
+                "RGVwYXJ0bWVudC0zNTE=",
+                "RGVwYXJ0bWVudC00Mg==",
+                "RGVwYXJ0bWVudC00NA==",
+                "RGVwYXJ0bWVudC04MzE=",
+                "RGVwYXJ0bWVudC00NQ==",
+                "RGVwYXJ0bWVudC00Ng==",
+                "RGVwYXJ0bWVudC00Nw==",
+                "RGVwYXJ0bWVudC0zMzk=",
+                "RGVwYXJ0bWVudC0xNDk=",
+                "RGVwYXJ0bWVudC01MA==",
+                "RGVwYXJ0bWVudC01MQ==",
+                "RGVwYXJ0bWVudC04MA==",
+                "RGVwYXJ0bWVudC0xNDUy",
+                "RGVwYXJ0bWVudC01Mg==",
+                "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:87",
+                "RGVwYXJ0bWVudC0yMjE3",
+                "RGVwYXJ0bWVudC01OTU=",
+                "RGVwYXJ0bWVudC0xMzA4",
+                "RGVwYXJ0bWVudC01NA=="
+            ]
+        }
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:13": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:13",
+        "__typename": "FilterOption",
+        "id": "",
+        "value": "business  accounting"
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:51": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:51",
+        "__typename": "FilterOption",
+        "id": "",
+        "value": "human dev amp family sciences"
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:63": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:63",
+        "__typename": "FilterOption",
+        "id": "",
+        "value": "math  statisitics"
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:71": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:71",
+        "__typename": "FilterOption",
+        "id": "",
+        "value": "not specified"
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:87": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):filters:0:options:87",
+        "__typename": "FilterOption",
+        "id": "",
+        "value": "theatre  dance"
+    },
+    "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo": {
+        "__id": "client:root:newSearch:teachers(after:\"\",first:8,query:{\"fallback\":true,\"schoolID\":\"\",\"text\":\"vida\"}):pageInfo",
+        "__typename": "PageInfo",
+        "endCursor": "YXJyYXljb25uZWN0aW9uOjc=",
+        "hasNextPage": true
+    }
+}
