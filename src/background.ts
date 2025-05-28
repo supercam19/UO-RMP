@@ -4,40 +4,48 @@ type Packet = {
     payload: any;
 }
 type ProfMap = Record<string, any>;
+type CachedData = {
+    timestamp: number;
+    avgRating: number;
+}
 
 async function handleMessage(request: Packet, sender: chrome.runtime.MessageSender, sendResponse: Function) {
     if (request && request.type === 'profNames') {
-        console.log('Background script received message:', request.payload);
         let ratings = new Map<string, string>();
         for (const name of request.payload) {
-            const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + name.replace(" ", "+");
+            const storedObj = await chrome.storage.local.get(name);
+            const stored: CachedData | undefined = storedObj[name];
+            if (stored) {
+                if (Date.now() - stored.timestamp < 1000 * 60 * 60) {
+                    ratings.set(name, stored.avgRating.toString());
+                    continue;
+                }
+            }
+            const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + name.replace(" ", "+").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace('-', ' ');
             const prof = new Professor(name);
             try {
-                console.log('Fetching data for ' + name);
                 const res = await fetch(url);
-                console.log('Fetch completed');
                 if (!res.ok) throw new Error("HTTP error " + res.status);
                 const text = await res.text();
                 const match = text.match(/window\.__RELAY_STORE__\s*=\s*(\{[\s\S]*?\});/)
                 if (match) {
-                    console.log('Found JSON data');
                     const rawJson = match[1];
                     const data = JSON.parse(rawJson);
                     const key = getKeyByName(prof.firstName, prof.lastName, data);
                     if (key) {
-                        console.log('Key found');
-                        ratings.set(name, data[key].avgRating || 'NA');
+                        ratings.set(name, data[key].avgRating.toString());
+                        chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: data[key].avgRating}});
                     } else {
-                        console.log('Key not found');
                         ratings.set(name, 'NA');
+                        chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: 'NA'}});
                     }
                 }
 
             } catch (error) {
                 ratings.set(name, 'NA');
+                chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: 'NA'}});
             }
-        }
-        console.log('Ratings collected:', ratings);
+}        
         sendResponse({payload: Object.fromEntries(ratings)});
     }
 }

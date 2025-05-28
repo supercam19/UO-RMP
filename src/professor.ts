@@ -5,7 +5,11 @@ export class Professor {
     public url: string = '';
 
     constructor(name: string) {
-        this.firstName = name.substring(0, name.lastIndexOf(' '));
+        // Remove accents and diacritics from the name
+        name = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        
+        name = name.replace('-', ' ');
+        this.firstName = name.substring(0, name.indexOf(' '));
         this.lastName = name.substring(name.lastIndexOf(' ') + 1);
     }
 }
