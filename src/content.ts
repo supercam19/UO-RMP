@@ -24,7 +24,7 @@ function waitForElm(selector: string) {
 console.log('Content script loaded');
 waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
     const ids = document.querySelectorAll('[id]'); 
-    const filtered = Array.from(ids).filter(el => /INSTR\$[0-9]+/.test(el.id))
+    const filtered = Array.from(ids).filter(el => /^MTG_INSTR\$[0-9]+$/.test(el.id))
     const names = new Set<string>(filtered.map(el => (el.textContent ?? '').trim().split('\n')[0]));
     names.delete('');
     names.delete('To be Announced');
@@ -36,6 +36,25 @@ waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
         },
         (response) => {
             console.log('Response from background script:', response);
+            for (const el of filtered) {
+                if (el.textContent === 'To be Announced') continue;
+                el.parentElement?.querySelector('.uormp-rating')?.remove();
+                const div = document.createElement('div');
+                div.textContent = response.payload[el.textContent ?? ''] ?? 'NA';
+                div.className = 'uormp-rating';
+                div.style.background = ratingToColour(div.textContent ?? 'NA');
+                el.parentElement?.appendChild(div);
+            }
         }
     );
 });
+
+function ratingToColour(rating: string): string {
+    if (rating === 'NA') return 'gray';
+    const num = parseFloat(rating);
+    if (isNaN(num)) return 'gray';
+    if (num >= 4.5) return 'green';
+    if (num >= 3.5) return 'yellow';
+    if (num >= 2.5) return 'orange';
+    return 'red';
+}
