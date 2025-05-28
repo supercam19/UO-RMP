@@ -1,3 +1,4 @@
+import {Professor} from "./professor";
 type Packet = {
     type: string;
     payload: any;
@@ -12,16 +13,23 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
             const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + name.replace(" ", "+");
             const prof = new Professor(name);
             try {
+                console.log('Fetching data for ' + name);
                 const res = await fetch(url);
+                console.log('Fetch completed');
                 if (!res.ok) throw new Error("HTTP error " + res.status);
                 const text = await res.text();
                 const match = text.match(/window\.__RELAY_STORE__\s*=\s*(\{[\s\S]*?\});/)
                 if (match) {
+                    console.log('Found JSON data');
                     const rawJson = match[1];
                     const data = JSON.parse(rawJson);
                     const key = getKeyByName(prof.firstName, prof.lastName, data);
                     if (key) {
+                        console.log('Key found');
                         ratings.set(name, data[key].avgRating || 'NA');
+                    } else {
+                        console.log('Key not found');
+                        ratings.set(name, 'NA');
                     }
                 }
 
@@ -29,8 +37,8 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                 ratings.set(name, 'NA');
             }
         }
+        console.log('Ratings collected:', ratings);
         sendResponse({payload: Object.fromEntries(ratings)});
-        return true;
     }
 }
 
@@ -45,4 +53,7 @@ function getKeyByName(firstName: string, lastName: string, data: ProfMap): strin
 }
 
 
-chrome.runtime.onMessage.addListener(handleMessage)
+chrome.runtime.onMessage.addListener((request: Packet, sender: chrome.runtime.MessageSender, sendResponse: Function) => {
+    handleMessage(request, sender, sendResponse);
+    return true;
+});

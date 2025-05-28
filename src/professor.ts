@@ -1,4 +1,4 @@
-class Professor {
+export class Professor {
     public firstName: string;
     public lastName: string;
     public rating: string = 'NA';
