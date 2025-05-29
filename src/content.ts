@@ -1,13 +1,13 @@
 // Stolen from Yong Wang
 // https://stackoverflow.com/a/61511955
-function waitForElm(selector: string) {
+function waitForElm(selector: string, waitForExist: boolean = true) {
     return new Promise(resolve => {
-        if (document.querySelector(selector)) {
+        if ((document.querySelector(selector) !== null) === waitForExist) {
             return resolve(document.querySelector(selector));
         }
 
         const observer = new MutationObserver(mutations => {
-            if (document.querySelector(selector)) {
+            if ((document.querySelector(selector) !== null) === waitForExist) {
                 observer.disconnect();
                 resolve(document.querySelector(selector));
             }
@@ -21,21 +21,19 @@ function waitForElm(selector: string) {
         });
     });
 }
-console.log('Content script loaded');
-waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
+
+function onEnrolPage() {
     const ids = document.querySelectorAll('[id]'); 
     const filtered = Array.from(ids).filter(el => /^MTG_INSTR\$[0-9]+$/.test(el.id))
     const names = new Set<string>(filtered.map(el => (el.textContent ?? '').trim().split('\n')[0]));
     names.delete('');
     names.delete('To be Announced');
-    console.log(names);
     chrome.runtime.sendMessage(
         {
             type: 'profNames',
             payload: Array.from(names)
         },
         (response) => {
-            console.log('Response from background script:', response);
             for (const el of filtered) {
                 if (el.textContent === 'To be Announced') continue;
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
@@ -47,7 +45,7 @@ waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
             }
         }
     );
-});
+}
 
 function ratingToColour(rating: string): string {
     if (rating === 'NA') return 'gray';
@@ -58,3 +56,13 @@ function ratingToColour(rating: string): string {
     if (num >= 2.5) return 'orange';
     return 'red';
 }
+
+async function main() {
+    while (true) {
+        await waitForElm('#win0divDERIVED_CLSRCH_GROUP6', true).then(onEnrolPage);
+        await waitForElm('#win0divDERIVED_CLSRCH_GROUP6', false);
+    }
+}
+
+main();
+
