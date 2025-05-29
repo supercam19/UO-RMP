@@ -1,4 +1,4 @@
-// Stolen from Yong Wang
+// Modified from Yong Wang
 // https://stackoverflow.com/a/61511955
 function waitForElm(selector: string, waitForExist: boolean = true) {
     return new Promise(resolve => {

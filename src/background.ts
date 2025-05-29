@@ -1,4 +1,3 @@
-import {Professor} from "./professor";
 type Packet = {
     type: string;
     payload: any;
@@ -21,8 +20,14 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                     continue;
                 }
             }
-            const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + name.replace(" ", "+").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace('-', ' ');
-            const prof = new Professor(name);
+            // Name to use for the search on RMP
+            let t = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            t = t.replace('-', ' ');
+            const firstName = name.substring(0, name.indexOf(' '));
+            const lastName = name.substring(name.lastIndexOf(' ') + 1);
+
+            const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + firstName + '+' + lastName;
+            
             try {
                 const res = await fetch(url);
                 if (!res.ok) throw new Error("HTTP error " + res.status);
@@ -31,7 +36,7 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                 if (match) {
                     const rawJson = match[1];
                     const data = JSON.parse(rawJson);
-                    const key = getKeyByName(prof.firstName, prof.lastName, data);
+                    const key = getKeyByName(firstName, lastName, data);
                     if (key) {
                         ratings.set(name, data[key].avgRating.toString());
                         chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: data[key].avgRating}});
