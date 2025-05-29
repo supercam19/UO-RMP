@@ -10,13 +10,13 @@ type CachedData = {
 
 async function handleMessage(request: Packet, sender: chrome.runtime.MessageSender, sendResponse: Function) {
     if (request && request.type === 'profNames') {
-        let ratings = new Map<string, string>();
+        let ratings = new Map<string, any>();
         for (const name of request.payload) {
             const storedObj = await chrome.storage.local.get(name);
             const stored: CachedData | undefined = storedObj[name];
             if (stored) {
                 if (Date.now() - stored.timestamp < 1000 * 60 * 60) {
-                    ratings.set(name, stored.avgRating.toString());
+                    ratings.set(name, stored);
                     continue;
                 }
             }
@@ -38,17 +38,20 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                     const data = JSON.parse(rawJson);
                     const key = getKeyByName(firstName, lastName, data);
                     if (key) {
-                        ratings.set(name, data[key].avgRating.toString());
-                        chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: data[key].avgRating}});
+                        const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: data[key].wouldTakeAgainPercent, avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings};
+                        ratings.set(name, info)
+                        chrome.storage.local.set({[name]:info});
                     } else {
-                        ratings.set(name, 'NA');
-                        chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: 'NA'}});
+                        const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA'};
+                        ratings.set(name, info);
+                        chrome.storage.local.set({[name]:info});
                     }
                 }
 
             } catch (error) {
-                ratings.set(name, 'NA');
-                chrome.storage.local.set({[name]:{timestamp: Date.now(), avgRating: 'NA'}});
+                const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA'};
+                ratings.set(name, info);
+                chrome.storage.local.set({[name]:info});
             }
 }        
         sendResponse({payload: Object.fromEntries(ratings)});

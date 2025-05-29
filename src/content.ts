@@ -39,7 +39,7 @@ function onEnrolPage() {
                 if (profName === '') continue;
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
                 const div = document.createElement('div');
-                div.textContent = response.payload[profName] ?? 'NA';
+                div.textContent = response.payload[profName]['avgRating'] ?? 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
                 el.parentElement?.appendChild(div);
