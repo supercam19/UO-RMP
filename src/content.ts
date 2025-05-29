@@ -40,7 +40,7 @@ waitForElm('#win0divDERIVED_CLSRCH_GROUP6').then(() => {
                 if (el.textContent === 'To be Announced') continue;
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
                 const div = document.createElement('div');
-                div.textContent = response.payload[el.textContent ?? ''] ?? 'NA';
+                div.textContent = response.payload[el.textContent?.trim().split('\n')[0] ?? ''] ?? 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
                 el.parentElement?.appendChild(div);
