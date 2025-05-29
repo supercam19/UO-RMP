@@ -25,7 +25,7 @@ function waitForElm(selector: string, waitForExist: boolean = true) {
 function onEnrolPage() {
     const ids = document.querySelectorAll('[id]'); 
     const filtered = Array.from(ids).filter(el => /^MTG_INSTR\$[0-9]+$/.test(el.id))
-    const names = new Set<string>(filtered.map(el => (el.textContent ?? '').trim().split('\n')[0]));
+    const names = new Set<string>(filtered.map(el => (parseName(el.textContent) ?? '')));
     names.delete('');
     names.delete('To be Announced');
     chrome.runtime.sendMessage(
@@ -35,16 +35,24 @@ function onEnrolPage() {
         },
         (response) => {
             for (const el of filtered) {
-                if (el.textContent === 'To be Announced') continue;
+                const profName = parseName(el.textContent);
+                if (profName === '') continue;
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
                 const div = document.createElement('div');
-                div.textContent = response.payload[el.textContent?.trim().split('\n')[0] ?? ''] ?? 'NA';
+                div.textContent = response.payload[profName] ?? 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
                 el.parentElement?.appendChild(div);
             }
         }
     );
+}
+
+function parseName(str: string | null): string {
+    if (!str) return '';
+    str = str.replaceAll('To be Announced', '').trim();
+    const names = str.split('\n');
+    return names[0];
 }
 
 function ratingToColour(rating: string): string {
