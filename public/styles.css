@@ -13,16 +13,22 @@
 .uormp-card {
     display: flex;
     flex-direction: row;
+    background: white;
+    z-index: 999;
+    width: 500px;
 }
 
 .uormp-card-left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: white;
+    z-index: 999;
 }
 
 .uormp-card-right {
     display: flex;
     flex-direction: column;
-    
+    background: white;
+    z-index: 999;
 }

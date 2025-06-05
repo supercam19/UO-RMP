@@ -43,7 +43,7 @@ function onEnrolPage() {
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
                 div.addEventListener("mouseover", (event) => {
-                    createCard(div, response.payload[profName]['avgRating'], response.payload[profName]['profName'],
+                    createCard(div, response.payload[profName]['avgRating'], profName,
                         response.payload[profName]['numRatings'],
                         response.payload[profName]['wouldTakeAgainPercent'],
                         response.payload[profName]['avgDifficulty']
@@ -65,19 +65,19 @@ function createCard(parentElm: Element, avgRating: string, profName: string, num
     const card = document.createElement('div');
     card.className = 'uormp-card';
     const parentRect = parentElm.getBoundingClientRect();
-    card.style.left = `${parentRect.right + 5}px`;
-    card.style.top = `${parentRect.top}px`;
+    card.style.left = `${parentRect.left + 5}px`;
+    card.style.top = `${parentRect.bottom}px`;
     card.innerHTML = `
         <div class="uormp-card-left">
-            <h5>QUALITY</h5>
-            <div claass=uormp-rating>${avgRating}</div>
-            <h5>${numRatings} ratings</h5>
+            <div class="uormp-heavy">QUALITY</div>
+            <div class=uormp-rating>${avgRating}</div>
+            <div class="uormp-light">${numRatings} ratings</h5>
         </div>
         <div class="uormp-card-right">
-            <h4>${profName}</h4>
-            <h5>University of Ottawa</h5>
-            <h5>${wouldTakeAgainPercent}% would take again</h5>
-            <h5>${avgDifficulty} average difficulty</h5>
+            <div class="uormp-heavy">${profName}</div>
+            <div class="uormp-light">University of Ottawa</div>
+            <div class="uormp-light">${wouldTakeAgainPercent}% would take again</div>
+            <div class="uormp-light">${avgDifficulty} average difficulty</div>
         </div>
     `
     parentElm.appendChild(card);
