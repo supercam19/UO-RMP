@@ -95,13 +95,13 @@ function parseName(str: string | null): string {
 }
 
 function ratingToColour(rating: string): string {
-    if (rating === 'NA') return 'gray';
+    if (rating === 'NA') return 'lightgray';
     const num = parseFloat(rating);
-    if (isNaN(num)) return 'gray';
-    if (num >= 4.5) return 'green';
+    if (isNaN(num)) return 'lightgray';
+    if (num >= 4.5) return 'lightgreen';
     if (num >= 3.5) return 'yellow';
     if (num >= 2.5) return 'orange';
-    return 'red';
+    return 'rgb(255, 156, 156)';
 }
 
 async function main() {
