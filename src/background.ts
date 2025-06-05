@@ -38,18 +38,18 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                     const data = JSON.parse(rawJson);
                     const key = getKeyByName(firstName, lastName, data);
                     if (key) {
-                        const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: data[key].wouldTakeAgainPercent, avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings};
+                        const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: data[key].wouldTakeAgainPercent, avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings, department: data[key].department};
                         ratings.set(name, info)
                         chrome.storage.local.set({[name]:info});
                     } else {
-                        const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA'};
+                        const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA', department: 'NA'};
                         ratings.set(name, info);
                         chrome.storage.local.set({[name]:info});
                     }
                 }
 
             } catch (error) {
-                const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA'};
+                const info = {timestamp: Date.now(), avgRating: 'NA', wouldTakeAgainPercent: 'NA', avgDifficulty: 'NA', numRatings: 'NA', department: 'NA'};
                 ratings.set(name, info);
                 chrome.storage.local.set({[name]:info});
             }

@@ -46,7 +46,8 @@ function onEnrolPage() {
                     createCard(div, response.payload[profName]['avgRating'], profName,
                         response.payload[profName]['numRatings'],
                         response.payload[profName]['wouldTakeAgainPercent'],
-                        response.payload[profName]['avgDifficulty']
+                        response.payload[profName]['avgDifficulty'],
+                        response.payload[profName]['department']
                     )
                 });
                 div.addEventListener("mouseout", (event) => {
@@ -61,7 +62,7 @@ function onEnrolPage() {
     );
 }
 
-function createCard(parentElm: Element, avgRating: string, profName: string, numRatings: string, wouldTakeAgainPercent: string, avgDifficulty: string) {
+function createCard(parentElm: Element, avgRating: string, profName: string, numRatings: string, wouldTakeAgainPercent: string, avgDifficulty: string, department: string) {
     const card = document.createElement('div');
     card.className = 'uormp-card';
     const parentRect = parentElm.getBoundingClientRect();
@@ -75,6 +76,7 @@ function createCard(parentElm: Element, avgRating: string, profName: string, num
         </div>
         <div class="uormp-card-right">
             <div class="uormp-heavy">${profName}</div>
+            <div class="uormp-light">${department}</div>
             <div class="uormp-light">University of Ottawa</div>
             <div class="uormp-light">${wouldTakeAgainPercent}% would take again</div>
             <div class="uormp-light">${avgDifficulty} average difficulty</div>
