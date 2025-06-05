@@ -55,6 +55,9 @@ function onEnrolPage() {
                     if (card) {
                         card.remove();
                     }
+                });
+                div.addEventListener("click", (event) => {
+                    window.open(`https://www.ratemyprofessors.com/search/professors/1452?q=${encodeURIComponent(profName)}`, '_blank');
                 })
                 el.parentElement?.appendChild(div);
             }
