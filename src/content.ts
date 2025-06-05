@@ -42,10 +42,45 @@ function onEnrolPage() {
                 div.textContent = response.payload[profName]['avgRating'] ?? 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
+                div.addEventListener("mouseover", (event) => {
+                    createCard(div, response.payload[profName]['avgRating'], response.payload[profName]['profName'],
+                        response.payload[profName]['numRatings'],
+                        response.payload[profName]['wouldTakeAgainPercent'],
+                        response.payload[profName]['avgDifficulty']
+                    )
+                });
+                div.addEventListener("mouseout", (event) => {
+                    const card = document.querySelector('.uormp-card');
+                    if (card) {
+                        card.remove();
+                    }
+                })
                 el.parentElement?.appendChild(div);
             }
         }
     );
+}
+
+function createCard(parentElm: Element, avgRating: string, profName: string, numRatings: string, wouldTakeAgainPercent: string, avgDifficulty: string) {
+    const card = document.createElement('div');
+    card.className = 'uormp-card';
+    const parentRect = parentElm.getBoundingClientRect();
+    card.style.left = `${parentRect.right + 5}px`;
+    card.style.top = `${parentRect.top}px`;
+    card.innerHTML = `
+        <div class="uormp-card-left">
+            <h5>QUALITY</h5>
+            <div claass=uormp-rating>${avgRating}</div>
+            <h5>${numRatings} ratings</h5>
+        </div>
+        <div class="uormp-card-right">
+            <h4>${profName}</h4>
+            <h5>University of Ottawa</h5>
+            <h5>${wouldTakeAgainPercent}% would take again</h5>
+            <h5>${avgDifficulty} average difficulty</h5>
+        </div>
+    `
+    parentElm.appendChild(card);
 }
 
 function parseName(str: string | null): string {
