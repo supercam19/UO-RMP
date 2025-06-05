@@ -1,4 +1,4 @@
-// Stolen from Yong Wang
+// Modified from Yong Wang
 // https://stackoverflow.com/a/61511955
 function waitForElm(selector: string, waitForExist: boolean = true) {
     return new Promise(resolve => {
@@ -39,13 +39,52 @@ function onEnrolPage() {
                 if (profName === '') continue;
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
                 const div = document.createElement('div');
-                div.textContent = response.payload[profName] ?? 'NA';
+                div.textContent = response.payload[profName]['avgRating'] ?? 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
+                div.addEventListener("mouseover", (event) => {
+                    createCard(div, response.payload[profName]['avgRating'], profName,
+                        response.payload[profName]['numRatings'],
+                        response.payload[profName]['wouldTakeAgainPercent'],
+                        response.payload[profName]['avgDifficulty'],
+                        response.payload[profName]['department']
+                    )
+                });
+                div.addEventListener("mouseout", (event) => {
+                    const card = document.querySelector('.uormp-card');
+                    if (card) {
+                        card.remove();
+                    }
+                });
+                div.addEventListener("click", (event) => {
+                    window.open(`https://www.ratemyprofessors.com/search/professors/1452?q=${encodeURIComponent(profName)}`, '_blank');
+                })
                 el.parentElement?.appendChild(div);
             }
         }
     );
+}
+
+function createCard(parentElm: Element, avgRating: string, profName: string, numRatings: string, wouldTakeAgainPercent: string, avgDifficulty: string, department: string) {
+    const card = document.createElement('div');
+    card.className = 'uormp-card';
+    const parentRect = parentElm.getBoundingClientRect();
+    card.style.left = `${parentRect.right + 5}px`;
+    card.style.top = `${parentRect.top - 23}px`;
+    card.innerHTML = `
+        <div class="uormp-card-left">
+            <div class="uormp-heavy" style="font-size: 12px;">QUALITY</div>
+            <div class="uormp-rating" style="background: ${ratingToColour(avgRating)};">${avgRating}</div>
+            <div class="uormp-light" style="font-size: 12px;">${numRatings} ratings</div>
+        </div>
+        <div class="uormp-card-right">
+            <div class="uormp-heavy">${profName}</div>
+            <div class="uormp-light" style="color: #222;font-size: 12px;">${department}</div>
+            <div class="uormp-light">${wouldTakeAgainPercent}% would take again</div>
+            <div class="uormp-light">${avgDifficulty} average difficulty</div>
+        </div>
+    `
+    parentElm.appendChild(card);
 }
 
 function parseName(str: string | null): string {
