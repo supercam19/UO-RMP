@@ -38,7 +38,7 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                     const data = JSON.parse(rawJson);
                     const key = getKeyByName(firstName, lastName, data);
                     if (key) {
-                        const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: Math.round(data[key].wouldTakeAgainPercent).toString(), avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings, department: data[key].department};
+                        const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: isNaN(data[key].wouldTakeAgainPercent) ? 'NA' : Math.round(data[key].wouldTakeAgainPercent).toString(), avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings, department: data[key].department};
                         ratings.set(name, info)
                         chrome.storage.local.set({[name]:info});
                     } else {
