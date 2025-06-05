@@ -66,18 +66,17 @@ function createCard(parentElm: Element, avgRating: string, profName: string, num
     const card = document.createElement('div');
     card.className = 'uormp-card';
     const parentRect = parentElm.getBoundingClientRect();
-    card.style.left = `${parentRect.left + 5}px`;
-    card.style.top = `${parentRect.bottom}px`;
+    card.style.left = `${parentRect.right + 5}px`;
+    card.style.top = `${parentRect.top - 23}px`;
     card.innerHTML = `
         <div class="uormp-card-left">
-            <div class="uormp-heavy">QUALITY</div>
-            <div class=uormp-rating>${avgRating}</div>
-            <div class="uormp-light">${numRatings} ratings</h5>
+            <div class="uormp-heavy" style="font-size: 12px;">QUALITY</div>
+            <div class="uormp-rating" style="background: ${ratingToColour(avgRating)};">${avgRating}</div>
+            <div class="uormp-light" style="font-size: 12px;">${numRatings} ratings</div>
         </div>
         <div class="uormp-card-right">
             <div class="uormp-heavy">${profName}</div>
-            <div class="uormp-light">${department}</div>
-            <div class="uormp-light">University of Ottawa</div>
+            <div class="uormp-light" style="color: #222;font-size: 12px;">${department}</div>
             <div class="uormp-light">${wouldTakeAgainPercent}% would take again</div>
             <div class="uormp-light">${avgDifficulty} average difficulty</div>
         </div>

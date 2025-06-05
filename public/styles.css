@@ -12,23 +12,48 @@
 
 .uormp-card {
     display: flex;
+    position: fixed;
     flex-direction: row;
-    background: white;
+    background: #eee;
+    width: fit-content;
+    white-space: nowrap;
     z-index: 999;
-    width: 500px;
 }
 
 .uormp-card-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
+    justify-content: center;
+    background: #eee;
+    padding: 0px 30px 0px 10px;
     z-index: 999;
+}
+
+.uormp-card-right > div {
+    width: 100%;
+    text-align: left;
 }
 
 .uormp-card-right {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 7px 0px 0px;
     z-index: 999;
+}
+
+.uormp-light {
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.uormp-heavy {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 20px;
 }
