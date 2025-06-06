@@ -9,6 +9,11 @@
     },
     "permissions": ["scripting", "activeTab", "storage"],
     "host_permissions": ["https://www.ratemyprofessors.com/*"],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{dc4c7d75-099f-4e43-b077-6333a09869df}"
+        }
+    },
     "background": {
         "scripts": ["background.js"]
     },
