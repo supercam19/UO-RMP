@@ -1,3 +1,5 @@
+import {encodeSearch, nameMatches} from './searchUtility';
+
 type Packet = {
     type: string;
     payload: any;
@@ -20,12 +22,9 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                     continue;
                 }
             }
-            // Name to use for the search on RMP
-            let t = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            t = t.replace('-', ' ');
-            const firstName = name.substring(0, name.indexOf(' '));
-            const lastName = name.substring(name.lastIndexOf(' ') + 1);
-
+            let t = encodeSearch(name).split(' ');
+            let firstName = t[0];
+            let lastName = t[t.length - 1];
             const url = "https://www.ratemyprofessors.com/search/professors/1452?q=" + firstName + '+' + lastName;
             
             try {
@@ -36,7 +35,7 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                 if (match) {
                     const rawJson = match[1];
                     const data = JSON.parse(rawJson);
-                    const key = getKeyByName(firstName, lastName, data);
+                    const key = getKeyByName(name, data);
                     if (key) {
                         const info ={timestamp: Date.now(), avgRating: data[key].avgRating, wouldTakeAgainPercent: isNaN(data[key].wouldTakeAgainPercent) ? 'NA' : Math.round(data[key].wouldTakeAgainPercent).toString(), avgDifficulty: data[key].avgDifficulty, numRatings: data[key].numRatings, department: data[key].department};
                         ratings.set(name, info)
@@ -58,13 +57,12 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
     }
 }
 
-function getKeyByName(firstName: string, lastName: string, data: ProfMap): string | undefined {
+function getKeyByName(name: string, data: ProfMap): string | undefined {
     return Object.entries(data).find(([_, value]) =>
         value &&
         typeof value.firstName === 'string' &&
         typeof value.lastName === 'string' &&
-        value.firstName === firstName &&
-        value.lastName === lastName
+        nameMatches(name, value.firstName, value.lastName)
       )?.[0];
 }
 
