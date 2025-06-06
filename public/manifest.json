@@ -1,8 +1,12 @@
 {
     "manifest_version": 3,
     "name": "UO Rate My Prof",
-    "version": "0.1",
+    "author": "Cameron Labelle",
+    "version": "1.0",
     "description": "View professor rankings on the UOZone enrollment page",
+    "icons": {
+        "64": "icon_64.png"
+    },
     "permissions": ["scripting", "activeTab", "storage"],
     "host_permissions": ["https://www.ratemyprofessors.com/*"],
     "background": {
