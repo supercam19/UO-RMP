@@ -55,7 +55,6 @@ function onEnrolPage() {
 
     const courses = new Set<string>(filteredCourses.map(el => (parseCourse(el.textContent) ?? '')));
     courses.delete('');
-    console.log(courses);
 
     chrome.runtime.sendMessage(
         {
@@ -63,7 +62,6 @@ function onEnrolPage() {
             payload: [Array.from(names), Array.from(courses)]
         },
         (response) => {
-            console.log(response);
             for (const el of filteredNames) {
                 const profCoursePair = encyclopedia.get(el);
                 if (profCoursePair == undefined) continue;
