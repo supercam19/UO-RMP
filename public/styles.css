@@ -45,6 +45,21 @@
     z-index: 999;
 }
 
+.uogrades-card {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 0px;
+    z-index: 999;
+}
+
+.uogrades-card > div {
+    width: 100%;
+    text-align: left;
+}
+
 .uormp-light {
     font-size: 14px;
     text-align: left;
