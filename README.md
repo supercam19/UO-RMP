@@ -8,6 +8,7 @@ UO-RMP is a web extension that conveniently places a professor's [Rate my Profes
 ## Downloads
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/uo-rate-my-prof/)
 * [Chrome (manual install)](#installing-on-chrome)
+* [Edge (manual install)](#installing-on-edge)
 
 Note: The extension could theoretically work on Safari, but hasn't been tested.
 
