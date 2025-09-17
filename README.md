@@ -12,7 +12,7 @@ UO-RMP is a web extension that conveniently places a professor's [Rate my Profes
 Note: The extension could theoretically work on Safari, but hasn't been tested.
 
 ## Installing on Chrome
-1. Download the UO-RMP.zip file from [the downloads page](https://www.github.com/supercam19/uo-rmp/releases/latest).
+1. Download the UO-RMP-Chrome.zip file from [the downloads page](https://www.github.com/supercam19/uo-rmp/releases/latest).
 2. On your computer, unzip the downloaded zip file.
 3. In Chrome, type `chrome://extensions` into the address bar
 4. Enable developer mode in the top right of the page
