@@ -32,4 +32,4 @@ Clone the repo, and in the cloned directory
 npm install
 npm run build
 ```
-The built extension is in the `dist` directory.
+The built extension is in the `dist` directory. If you are planning to use this on a browser other than Firefox, you must delete the background.scripts tag from manifest.json.
