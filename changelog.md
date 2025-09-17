@@ -1,5 +1,5 @@
 # Changelog
 
 ## Update v1.1.0 (Sept. 17, 2025)
-+Added average course grade to the info card (#4), thanks @AGamerGoat
++Added average course grade to the info card (#4), thanks to @AGamerGoat<br>
 ~Fixed whole number ratings not displaying centered; now will show with decimal (eg. 4->4.0)
