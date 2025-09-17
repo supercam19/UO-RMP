@@ -12,8 +12,9 @@ type CachedData = {
 
 async function handleMessage(request: Packet, sender: chrome.runtime.MessageSender, sendResponse: Function) {
     if (request && request.type === 'profNames') {
+        const names = new Set<string>(request.payload[0]);
         let ratings = new Map<string, any>();
-        for (const name of request.payload) {
+        for (const name of names) {
             const storedObj = await chrome.storage.local.get(name);
             const stored: CachedData | undefined = storedObj[name];
             if (stored) {
@@ -52,8 +53,42 @@ async function handleMessage(request: Packet, sender: chrome.runtime.MessageSend
                 ratings.set(name, info);
                 chrome.storage.local.set({[name]:info});
             }
-}        
-        sendResponse({payload: Object.fromEntries(ratings)});
+        }
+        
+        const courses = new Set<string>(request.payload[1]);
+        let coursesMap = new Map<string, any>();
+        for (const course of courses) {
+            const url = `https://uo.zone/api/courses/${course}/professors`;
+            let cdata = new Map<string, any>();
+
+            const storedObj = await chrome.storage.local.get(course);
+            const stored: CachedData | undefined = storedObj[course];
+            if (stored) {
+                if (Date.now() - stored.timestamp < 1000 * 60 * 60) {
+                    coursesMap.set(course, stored);
+                    continue;
+                }
+            }
+
+            try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error("HTTP error " + res.status);
+                
+                const data = JSON.parse(await res.text());
+                for (const el of data) cdata.set(el.name == null ? "None" : el.name, el.grades);
+                coursesMap.set(course, Object.fromEntries(cdata));
+                chrome.storage.local.set({[course]: Object.fromEntries(cdata)});
+            } catch (error) {
+                coursesMap.set(course, {"None": {mean: 'NA', median: 'NA', mode: 'NA'}});
+            }
+        }
+
+        const data = {
+            ratings: Object.fromEntries(ratings),
+            courses: Object.fromEntries(coursesMap)
+        }
+        
+        sendResponse({payload: data});
     }
 }
 
