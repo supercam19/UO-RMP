@@ -18,6 +18,13 @@ Note: The extension could theoretically work on Safari, but hasn't been tested.
 4. Enable developer mode in the top right of the page
 5. Press the `Load unpacked` button in the top left, and select the folder you unziped in step 2. The extension is now loaded.
 
+## Installing on Edge
+1. Download the UO-RMP-Chrome.zip file from [the downloads page](https://www.github.com/supercam19/uo-rmp/releases/latest).
+2. On your computer, unzip the downloaded zip file.
+3. In Edge, press the extensions button at the top and press `Manage extensions`
+4. Enable developer mode in the left panel of the page
+5. Press the `Load unpacked` button, and select the folder you unziped in step 2. The extension is now loaded.
+
 ## Build the project
 Clone the repo, and in the cloned directory
 ```
