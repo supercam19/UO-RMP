@@ -78,7 +78,9 @@ function onEnrolPage() {
                 const stats = [GPAToGrade(courseData["mean"]), courseData["median"], courseData["mode"]];
                 el.parentElement?.querySelector('.uormp-rating')?.remove();
                 const div = document.createElement('div');
-                div.textContent = ratings['avgRating'] ?? 'NA';
+                if (ratings && ratings['avgRating']) {
+                    div.textContent = Number(ratings['avgRating']).toFixed(1);
+                } else 'NA';
                 div.className = 'uormp-rating';
                 div.style.background = ratingToColour(div.textContent ?? 'NA');
                 div.addEventListener("mouseover", (event) => {
@@ -114,7 +116,7 @@ function createCard(parentElm: Element, avgRating: string, profName: string, num
     card.innerHTML = `
         <div class="uormp-card-left">
             <div class="uormp-heavy" style="font-size: 12px;">QUALITY</div>
-            <div class="uormp-rating" style="background: ${ratingToColour(avgRating)};">${avgRating}</div>
+            <div class="uormp-rating" style="background: ${ratingToColour(avgRating)};">${Number(avgRating).toFixed(1)}</div>
             <div class="uormp-light" style="font-size: 12px;">${numRatings} ratings</div>
         </div>
         <div class="uormp-card-right">
